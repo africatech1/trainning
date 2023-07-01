@@ -1,0 +1,17 @@
+name: shell commands
+
+on: [push]
+
+
+jobs:
+  run-shell-command:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: echo string
+      run: echo  "Hello Boina"
+    - name: Multiline script
+      run: |
+        node -v
+        pwd
