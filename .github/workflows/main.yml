@@ -5,8 +5,8 @@ on: [push]
 
 jobs:
   run-shell-command:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: checkout
       uses: actions/checkout@v2
     - name: echo string
